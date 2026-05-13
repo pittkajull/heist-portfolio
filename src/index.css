@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  /* Warna Custom */
+  --color-dark-bg: #050816;
+  --color-primary-blue: #4e6bff;
+  --color-secondary-blue: #1e264a;
+
+  /* Shadow & Glow Custom */
+  --shadow-glow: 0 0 20px rgba(78, 107, 255, 0.3);
+  --shadow-blue-glow: 0 0 40px rgba(30, 58, 138, 0.5);
+  --shadow-neon: 0 0 15px rgba(78, 107, 255, 0.6);
+}
+
+/* Custom Utilities untuk Text Shadow (karena Tailwind belum ada defaultnya) */
+@utility text-glow {
+  text-shadow: 0 0 10px rgba(78, 107, 255, 0.8);
+}
+
+@layer base {
+  body {
+    @apply bg-dark-bg text-white font-sans;
+  }
+}
